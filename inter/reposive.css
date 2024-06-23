@@ -1,0 +1,44 @@
+.nav__toggle {
+    position: relative;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .nav__burger, 
+  .nav__close {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset: 0;
+    margin: auto;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: opacity .1s, transform .4s;
+  }
+  
+  .nav__close {
+    opacity: 0;
+  }
+  
+  /* Navigation for mobile devices */
+  @media screen and (max-width: 1118px) {
+    .desk-menu {
+      position: absolute;
+      left: 0;
+      top: 2.5rem;
+      width: 100%;
+      height: calc(100vh - 3.5rem);
+      overflow: auto;
+      pointer-events: none;
+      opacity: 0;
+      transition: top .4s, opacity .3s;
+    }
+    .desk-menu::-webkit-scrollbar {
+      width: 0;
+    }
+    .menu {
+        background-color: black;
+        padding-top: 1rem;
+      }
+    }
+    
